@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 150px;
+    transition: background-color 0.5s ease;
+}
+
+.resume-container {
+    display: flex;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease;
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: #37474f;
+    color: #ffffff;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #00acc1;
+    animation: slideInFromLeft 1s ease;
+    
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #00acc1;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #00796b;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: #ffffff;
+    background-color: #00acc1;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 172, 193, 0.8);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    animation: fadeIn 1s ease;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+    animation: slideInFromRight 1s ease;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    background-color: #00796b;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
